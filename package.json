@@ -1,0 +1,23 @@
+{
+	"name": "kad-jemputan",
+	"version": "1.0.0",
+	"description": "",
+	"private": true,
+	"scripts": {
+		"build": "webpack"
+	},
+	"author": "Lord Sayur",
+	"license": "ISC",
+	"dependencies": {
+		"materialize-css": "^1.0.0-rc.2",
+		"p5": "^1.1.9"
+	},
+	"devDependencies": {
+		"file-loader": "^6.1.0",
+		"html-webpack-plugin": "^4.4.1",
+		"sass": "^1.26.10",
+		"sass-loader": "^10.0.2",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12"
+	}
+}
