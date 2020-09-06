@@ -6,9 +6,9 @@ let s = (sk) => {
 		flower = sk.loadImage('../assets/bunga.png');
 	};
 	sk.setup = () => {
+		addAnimateCss();
 		sk.createCanvas(window.innerWidth, document.documentElement.scrollHeight);
 		sk.background(40);
-		addAnimateCss();
 	};
 
 	sk.draw = () => {
