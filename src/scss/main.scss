@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css');
+
+$primaryColor: #fbe9e7;
+$secondaryColor: #ffd180;
+$welcomeFont: 'Great Vibes', cursive;
+$hajatTitleFont: 'Cinzel', serif;
+$qadhiFont: 'Reem Kufi', sans-serif;
+
 h1 {
 	color: yellow;
 }
@@ -14,13 +21,50 @@ p {
 	color: whitesmoke;
 }
 
+h1 {
+	color: $primaryColor;
+	font-size: 2.2rem;
+}
+
 #draw {
 	position: absolute;
 	top: 0%;
 	left: 0%;
-	z-index: -1;
+	z-index: -10;
 }
 
 .ads {
-	background-color: yellowgreen;
+	background-color: $secondaryColor;
+	p,
+	h2 {
+		color: #424242;
+	}
+}
+
+#welcome {
+	margin-top: 10rem;
+	font-family: $welcomeFont;
+	color: $primaryColor;
+}
+
+#welcomeBorder {
+	position: absolute;
+	top: 3rem;
+	right: 0;
+	height: 400px;
+	width: 100%;
+}
+
+#welcomeNote {
+	margin-top: 10rem;
+	margin-bottom: 4rem;
+}
+
+#qadhi {
+	font-family: $qadhiFont;
+}
+
+#hajatTitle {
+	font-family: $hajatTitleFont;
+	font-size: 1.8rem;
 }
