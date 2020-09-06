@@ -3,7 +3,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-	entry: [ __dirname + '/src/js/main.js', __dirname + '/src/scss/main.scss' ],
+	entry: [ __dirname + '/src/js/main.js' ],
 	output: {
 		filename: 'js/bundle.js',
 		path: path.resolve(__dirname, 'dist')
@@ -18,13 +18,7 @@ module.exports = {
 			{
 				test: /\.scss$/,
 				exclude: /node_modules/,
-				use: [
-					{
-						loader: 'file-loader',
-						options: { outputPath: 'css/', name: '[name].min.css' }
-					},
-					'sass-loader'
-				]
+				use: [ 'style-loader', 'css-loader', 'sass-loader' ]
 			}
 		]
 	},
