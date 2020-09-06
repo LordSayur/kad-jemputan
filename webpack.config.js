@@ -1,5 +1,5 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -35,6 +35,9 @@ module.exports = {
 			myPageHeader: 'Hello World',
 			template: './src/index.html',
 			filename: './index.html' //relative to root of the application
+		}),
+		new CopyWebpackPlugin({
+			patterns: [ { from: __dirname + '/src/assets', to: __dirname + '/dist/assets' } ]
 		})
 	]
 };
