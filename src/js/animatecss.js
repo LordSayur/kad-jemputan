@@ -34,11 +34,11 @@ const welcomeElements = [
 ];
 
 const lowerElements = [
-	{ name: '#omar-amirah-2', animation: 'animate__fadeIn', delay: delay2, speed: speedSlow },
-	{ name: '#waktu-tempat', animation: 'animate__fadeInRight', delay: delay2, speed: speedSlow },
-	{ name: '#tentative', animation: 'animate__fadeIn', delay: delay2, speed: speedSlow },
-	{ name: '#doa', animation: 'animate__fadeInLeft', delay: delay2, speed: speedSlow },
-	{ name: '#ads', animation: 'animate__fadeIn' }
+	{ name: '#omar-amirah-2', animation: 'animate__fadeInUp', delay: delay2, speed: speedSlow },
+	{ name: '#waktu-tempat', animation: 'animate__fadeInUp', delay: delay2, speed: speedSlow },
+	{ name: '#tentative', animation: 'animate__fadeInUp', delay: delay2, speed: speedSlow },
+	{ name: '#doa', animation: 'animate__fadeInUp', delay: delay2, speed: speedSlow },
+	{ name: '#ads', animation: 'animate__fadeInUp' }
 ];
 
 let isInViewport = function(elem) {
