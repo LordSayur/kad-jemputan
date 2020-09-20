@@ -32,5 +32,11 @@ module.exports = {
 		new CopyWebpackPlugin({
 			patterns: [ { from: __dirname + '/src/assets', to: __dirname + '/dist/assets' } ]
 		})
-	]
+	],
+	devServer: {
+		contentBase: path.join(__dirname, 'dist'),
+		host: '192.168.0.41',
+		compress: true,
+		port: 8080
+	}
 };
