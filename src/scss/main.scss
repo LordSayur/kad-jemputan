@@ -9,10 +9,6 @@ $welcomeFont: 'Great Vibes', cursive;
 $hajatTitleFont: 'Cinzel', serif;
 $qadhiFont: 'Reem Kufi', sans-serif;
 
-h1 {
-	color: yellow;
-}
-
 h2 {
 	color: whitesmoke;
 }
@@ -26,45 +22,50 @@ h1 {
 	font-size: 2.2rem;
 }
 
+main {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
 #draw {
-	position: absolute;
+	position: fixed;
 	top: 0%;
 	left: 0%;
 	z-index: -10;
 }
 
-.ads {
-	background-color: $secondaryColor;
-	p,
-	h2 {
-		color: #424242;
+#omar-amirah {
+	position: relative;
+	font-family: $welcomeFont;
+	color: $primaryColor;
+	margin-bottom: 10rem;
+
+	.border {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 400px;
+		width: 100%;
+	}
+
+	.text {
+		padding-top: 4rem;
 	}
 }
 
-#welcome {
-	margin-top: 10rem;
-	font-family: $welcomeFont;
-	color: $primaryColor;
+#hajat-title {
+	margin: 4rem 0;
+	h1 {
+		font-family: $hajatTitleFont;
+		font-size: 1.8rem;
+	}
 }
 
-#welcomeBorder {
-	position: absolute;
-	top: 3rem;
-	right: 0;
-	height: 400px;
-	width: 100%;
-}
-
-#welcomeNote {
-	margin-top: 10rem;
-	margin-bottom: 4rem;
-}
-
-#qadhi {
+.jawi {
 	font-family: $qadhiFont;
 }
 
-#hajatTitle {
-	font-family: $hajatTitleFont;
-	font-size: 1.8rem;
+.waktu {
+	border-right: 2.5px solid white;
 }
