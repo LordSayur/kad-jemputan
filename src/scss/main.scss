@@ -39,7 +39,7 @@ main {
 	position: relative;
 	font-family: $welcomeFont;
 	color: $primaryColor;
-	margin-bottom: 10rem;
+	margin-bottom: 6rem;
 
 	.border {
 		position: absolute;
@@ -55,7 +55,7 @@ main {
 }
 
 #hajat-title {
-	margin: 4rem 0;
+	margin: 0;
 	h1 {
 		font-family: $hajatTitleFont;
 		font-size: 1.8rem;
